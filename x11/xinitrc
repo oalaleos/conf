@@ -16,5 +16,5 @@
 		. "$HOME/.xprofile"
 	fi
 
-#	ssh-agent dwm &
+	ssh-agent dwm &
 	exec dwm
