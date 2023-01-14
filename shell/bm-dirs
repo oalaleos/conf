@@ -1,0 +1,20 @@
+# You can add comments to these files with #
+h     $HOME
+ca	  ${XDG_CACHE_HOME:-$HOME/.cache}
+co	  ${XDG_CONFIG_HOME:-$HOME/.config}
+cs    ${XDG_CONFIG_HOME/shell:-$HOME/.config}/shell
+cv    ${XDG_CONFIG_HOME/nvim:-$HOME/.config}/nvim
+cnc   ${XDG_CONFIG_HOME/ncmpcpp:-$HOME/.config}/ncmpcpp
+cz    ${XDG_CONFIG_HOME/zsh:-$HOME/.config}/zsh
+cl    ${XDG_CONFIG_HOME/lf:-$HOME/.config}/lf
+cmu   ${XDG_CONFIG_HOME/mutt:-$HOME/.config}/mutt
+cx	  ${XDG_CONFIG_HOME/x11:-$HOME/.config}/x11
+dow   ${XDG_DOWNLOAD_DIR:-$HOME/Downloads}
+doc   ${XDG_DOCUMENTS_DIR:-$HOME/Documents}
+m     ${XDG_MUSIC_DIR:-$HOME/Music}
+p     ${XDG_PICTURES_DIR:-$HOME/Pictures}
+vi    ${XDG_VIDEOS_DIR:-$HOME/Videos}
+lb    $HOME/.local/bin
+lsr   $HOME/.local/src
+lsh   ${XDG_DATA_HOME:-$HOME/.local/share}
+rm    /mnt
