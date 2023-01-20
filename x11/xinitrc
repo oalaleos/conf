@@ -2,8 +2,6 @@
 
 # xinitrc runs automatically when you run startx.
 
-	exec echo "xinitrc_started" >> ~/start &
-
 # There are some small but important commands that need to be run when we start
 # the graphical environment. There is a link to this file in ~/.xprofile
 # because that file is run automatically if someone uses a display manager
@@ -16,4 +14,7 @@
 		. "$HOME/.xprofile"
 	fi
 
-	exec ssh-agent dwm
+# Ensure that xrdb has finished running before moving on to start the WM/DE.
+	[ -n "$xrdbpid" ] && wait "$xrdbpid"
+	eval $(ssh-agent)
+	exec dwm

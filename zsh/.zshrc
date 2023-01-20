@@ -79,5 +79,3 @@ bindkey -M visual '^[[P' vi-delete
 
 #+ Load syntax highlighting; should be last.
 source $XDG_CONFIG_HOME/zsh/plugins/fast-syntax-highlighting.plugin.zsh 2>/dev/null
-
-exec echo '.zshrc_started' >> ~/start &

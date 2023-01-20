@@ -29,11 +29,10 @@
 #L	     export CARGO_HOME="$XDG_DATA_HOME/cargo"
 #L	     export ANSIBLE_CONFIG="$XDG_CONFIG_HOME/ansible/ansible.cfg"
 #L	     export UNISON="$XDG_DATA_HOME/unison"
-
-#toInstall   export MBSYNCRC			= "$XDG_CONFIG_HOME/mbsync/config"
-#toInstall   export NOTMUCH_CONFIG		= "$XDG_CONFIG_HOME/notmuch-config"
-#toInstall   export WGETRC			= "$XDG_CONFIG_HOME/wget/wgetrc"
-#toInstall   export WINEPREFIX			= "$XDG_DATA_HOME/wineprefixes/default"
+		 export MBSYNCRC="$XDG_CONFIG_HOME/mbsync/config"
+ 		 export NOTMUCH_CONFIG="$XDG_CONFIG_HOME/notmuch-config"
+ 		 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
+		 export WINEPREFIX="$XDG_DATA_HOME/wineprefixes/default"
 	     export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store"
 
     # Inputrc - handles keyboard mapping for specific situations.
@@ -59,10 +58,6 @@
 		export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
 
 [ ! -f ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ] && setsid shortcuts ~/.shortcuts_error 2>$1 # >/dev/null 2>&1
-
-
-exec echo ".zprofile_started" >> ~/start &
-
 
 # Luke's version:
 	# Start graphical server on user's current tty if not already running.
